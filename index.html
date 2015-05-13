@@ -14,8 +14,11 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+		<script src="//use.typekit.net/ydj8imj.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,337 +43,843 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+				<section data-background="/images/intro.jpg">
+					<h4 class="upper">Writing Object-Oriented CSS</h4>
+					<h6 class="upper">With</h6>
+					<img src="/images/logo-sass.svg" style="max-width: 45%;" />
+					<h6 class="alt">By: Heather Buchel</h6>
+					
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+				<section data-background="#ffffff">
+					<h1 class="upper">Apply Object-Oriented Principles to Writing CSS</h1>
+					<h5 class="fragment other">Use Sass, a CSS preprocessor, to write it more efficiently</h5>
 				</section>
-
-				<!-- Example of nested vertical slides -->
+				
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h6>What does OOCSS Give Us?</h6>
+					<h1>Easier code reuse, extendability, and maintenance</h1>
 				</section>
+			
+				<section>
+					<h1>The hard parts of CSS:</h1>
+					<ul>
+						<li>
+							Naming classes. (consistent naming? expressive?)
+						</li>
+						<li>
+							Making things scalable. (does the project need room to grow?)
+						</li>
+						<li>
+							Making things maintainable. (who is updating it?)
+						</li>
+					</ul>
+				</section>
+				
+				
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+					<h6 class="other">The Basics of OOCSS</h6>
+					<div class="row fragment">
+						<div class="grid vertical">
+							<img src="/images/structure.svg" />
 						</div>
-					</section>
+						<div class="grid--2 vertical">
+							<h3>Separate Structure from Skin</h3>
+						</div>
+					</div>
+					<div class="row fragment">
+						<div class="grid vertical">
+							<img src="/images/content.svg" />
+						</div>
+						<div class="grid--2 vertical">
+							<h3>Separate Container and Content</h3>
+						</div>
+					</div>	
 				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
+				
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<h3>Don't Style Elements Directly</h3>
+					<div class="row">
+						<div class="grid">
+							<h5 class="red">Not Like This</h5>
+<pre><code data-trim>
+img {
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0,0,0,.3);
+  padding: 10px;
+}
+</code></pre>
+						</div>
+						<div class="grid fragment">
+							<h5>Like This</h5>
+<pre><code data-trim>
+.photo {
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0,0,0,.3);
+  padding: 10px;
+}
+</code></pre>
+						</div>
+					</div>
+					<h6 class="fragment">Less overriding of css later on</h6>
 
-    var nodes = document.querySelectorAll( selector );
+					</section>
+					
+				</section>
+				<section>
+					<h6>Furthermore...</h6>
+					<h3>Don't Use ID's to Style Elements</h3>
+					<div class="row">
+						<div class="grid">
+							<h5 class="red">Bad</h5>
+<pre><code data-trim>
+#photo {
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0,0,0,.3);
+  padding: 10px;
+}
+</code></pre>			
+							<p>Can't reuse this style since an ID can exist only once on a page.</p>			
+						</div>
+						<div class="grid fragment">
+							<h5 class="red">Bad</h5>
+<pre><code data-trim>
+#sidebar img {
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0,0,0,.3);
+  padding: 10px;
+}
+</code></pre>		
+							<p>
+								More overriding if you DON'T want an image with that style.
+							</p>					
+						</div>
+					</div>
+				</section>
+				<section>
+					<h6>Separating Structure from Skin</h6>
+					<h1>Create Styles that can be Mixed and Matched</h1>
+				</section>
+				<section>
+					<h6>The Button Example</h6>
+<pre><code data-trim>
+.btn {
+  background: rgb(35,146,226);
+  box-shadow: 0 3px  5px rgba(0,0,0,.1);
+  color: #fff;
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  border: none;
+}
+</code></pre>
+<pre><code data-trim>
+<button class="btn">Super Button</button>	
+</code></pre>
+				</section>
+				<section>
+					<h3>Too Much Heavy Lifting</h3>
+					<p>What If I want to?</p>
+					<ul>
+						<li class="fragment">Float Left?</li>
+						<li class="fragment">Change the background or color?</li>
+						<li class="fragment">Share some of the buttoney blockey styles?</li>
+					</ul>
+				</section>
+				<section>
+					<h3>OOCSS-Ified Button</h3>
+					<div class="row">
+						<div class="grid">
+							<h4>A 'Structure' Class</h4>
+						</div>
+						<div class="grid">
+							<h4>A 'Skin' Class</h4>
+						</div>
+						<div class="grid">
+							<h4>A 'Utility' Class</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn {
+  display: inline-block;
+  padding: 15px;
+  border: none;
+}	
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn--primary {
+  background: rgb(35,146,226);
+  box-shadow: 0 3px  5px rgba(0,0,0,.1);
+  color: #fff;
+}	
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.float-right {
+  float: right;
+}	
+</code></pre>	
+						</div>
+					</div>
+					
+<pre class="fragment"><code data-trim>
+	
+<button class="btn btn--primary float-right">Primary Button</button>
+	
+</code></pre>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+				</section>
+				<section>
+					<h3>Extending</h3>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.btn--secondary {
+  background: #f7f7f7;
+  color: #444;
+}	
+</code></pre>
+						</div>
+						<div class="grid--3 fragment">
+<pre><code data-trim>
+<button class="btn btn--secondary">Secondary Button</button>	
+</code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h1>Separate Container and Content</h1>
+					<h4>
+						<a href="http://codepen.io/hbuchel/pres/572314bad0fcb09f9a7274322eab028d?editors=110">Don't let styles depend on where you place the element on the page.</a>
+					</h4>
+				</section>
+				
+				
+				<section>
+					<h1>Too Much Classitis?</h1>
+<pre><code data-trim>
+<button class="btn btn--primary float-right">Primary Button Floated Right</button>	
+</code></pre>
+				</section>
+				
+				<section>
+					<h4>A Different Way with Selector Inheritance</h4>
+					<h6>Not Quite OOCSS</h6>
+<pre><code data-trim>
+.btn, .btn-primary, .btn-secondary {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  display: inline-block;
+  padding: 16px;
+}
+.btn-primary {
+  background: rgb(35,146,226);
+  color: #fff;
+}
+.btn-secondary {
+  background: #f7f7f7;
+  color: #444;
+}
+.float-right {
+  float: right;
+}
+</code></pre>
+				</section>
+				<section>
+<pre><code data-trim>
+<button class="btn-primary">Primary Button</button>
+<button class="btn-secondary float-right">Secondary Button (floated right)</button>
+</code></pre>
+				</section>
+				<section>
+					<h2>Use Selector Inheritance for 'Like' Elements</h2>
+					<div class="fragment">
+						<p>
+							Avoid using it for element's that don't share a relationship. Maybe heading elements shouldn't extend your button styles.
+						</p>
+<pre><code data-trim>
+.btn, .footer-block, .title-large {
+	box-shadow: 0 3px 5px rgba(0,0,0,.1);
+	border-radius: 10px;
+	line-height: 1.8rem;
+	display: block;
+}
+</code></pre>
+					</div>
+				</section>
+				
+				<section>
+					<h1>
+						"But, I like semantic Class names and OOCSS doesn't."
+					</h1>
+				</section>
+				
+				<section>
+					<h3>"Semantic" Class Names</h3>
+<pre><code data-trim>
+<article class="article">
+  <h1 class="article__title"> ... </h1>
+  <img src="article__thumbnail" />
+  <h2 class="article__subtitle"> ... </h2>
+</article>
+</code></pre>
+					<div class="fragment">
+						<h3>"Not Semantic" Class Names</h3>
+<pre><code data-trim>
+<article class="card border-radius float-right">
+	<h1 class="title-small"> ... </h1>
+	<img class="avatar" >
+	<h2 class="meta-text underline"> ... </h2>
+</article>
+</code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Markup needs to be semantic, not your class names</h1>
+					<h3>Keep in mind future scaleability of your code, and who needs to update it.</h3>
+				</section>
+				
+				<section>
+					<h1><a href="http://codepen.io/hbuchel/pres/96e408dae3606649a58b062650559c14?editors=110">Example with Semantic Naming</a></h1>
+				</section>
+				
+				<section>
+					<h1><a href="http://codepen.io/hbuchel/pres/3a579b2928a960afd6db486a213535a1?editors=110">Example with OOCSS Naming</a></h1>
+				</section>
+				
+				<section data-background="/images/intro-sass.jpg">
+					<div class="row">
+						<div class="grid">
+							<img src="/images/logo-sass.svg" style="" />
+						</div>
+						<div class="grid vertical">
+							<ul class="alt">
+								<li class="fragment">
+									It's a Preprocessor
+								</li>
+								<li class="fragment">
+									Utility for Maintaing our CSS
+								</li>
+								<li class="fragment">
+									Spend less time writing CSS
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h1>Choosing a Build Tool</h1>
+					<div class="row">
+						<div class="grid fragment">
+							Can my team work with it?
+						</div>
+						<div class="grid fragment">
+							Does it create more headaches then it solves?
+						</div>
+						<div class="grid fragment">
+							Who am I giving this code to?
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h1>
+						Basic Install Process
+					</h1>
+					<div class="row">
+						<div class="grid">
+							Get Ruby
+						</div>
+						<div class="grid">
+							(sudo) gem install sass
+						</div>
+					</div>
+					<p>
+						<a href="http://sass-lang.com/install">http://sass-lang.com/install</a>
+					</p>
+					
+					
+				</section>
+				
+				<section>
+					<h1>
+						Not working with a Ruby environment? 
+					</h1>
+					
+					C/C++ Port of Sass Compiler<br/>
+					<a href="https://github.com/sass/libsass">https://github.com/sass/libsass</a>
+					
+					
+				</section>
+				
+				
+				<section>
+					<h1>Try It!</h1>
+					<div class="row">
+						<div class="grid vertical">
+							<img src="/images/codepen.svg" />
+							<a href="codepen.io">codepen.io</a>
+						</div>
+						<div class="grid vertical">
+							<img src="/images/sassmeister.svg" />
+							<a href="http://sassmeister.com/">http://sassmeister.com/</a>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h1>Sass Gives us a Few Tools...</h1>
+				</section>
+				<section>
+					<h1>Partials</h1>
+					<h5 class="upper other">Organization</h5>
+					<div class="row">
+						<div class="grid">
+							<h3>Directory Structure</h3>
+<pre><code data-trim>
+/base
+... _forms.scss
+... _tables.scss
+... _utility.scss
+/objects
+... _articles.scss
+... _charts.scss
+style.scss
+</code></pre>
+						
+						</div>
+						<div class="grid">
+							<h3>style.scss</h3>
+<pre><code data-trim>
+// Base
+@import "base/forms"
+@import "base/tables"
+@import "base/utility"
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
+// Objects
+@import "objects/articles"
+@import "objects/charts"
+</code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h1>Variables</h1>
+					<h5 class="upper other">Maintain Frequently Used Values</h5>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+// Colors
+$branding-blue: #2C7399;
+
+// Units
+$margin: 40px;
+
+// Fonts
+$font-body: 'Futura PT', 'Arial', sans-serif;	
+</code></pre>
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn--primary {
+  color: $branding-blue;
+  padding: $margin;
+  font-family: $font-body;
+}
+</code></pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Nesting</h1>
+					<h5 class="upper other">Avoid it when possible, but it can make writing selectors faster.</h5>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.menu {
+  margin: 0;
+  li {
+  	text-align: center;
+    a {
+	  padding: 10px;
+	}
   }
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.menu {
+  margin: 0;
+}
+.menu li {
+  text-align: center;
+}
+.menu li a {
+  padding: 10px;
+}
+</code></pre>							
+						</div>
+					</div>
 				</section>
-
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+					<h1>@extend</h1>
+					<h5 class="upper other">
+						Manage Selector Inheritance
+					</h5>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.btn, .btn-primary {
+  padding: 10px;
+  line-height: 1.2;
+}	
+.btn-primary {
+  color: #fff;
+}
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn {
+  padding: 10px;
+  line-height: 1.2; 
+}
+.btn-primary {
+  @extend .btn;
+  color: #fff;
+}
+</code></pre>	
+						</div>
+					</div>
 
+				</section>
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+					<h1>Unwanted Side Effects of @extend</h1>
+					<div class="row">
+						<div class="grid">
+<pre><code>
+.btn {
+  padding: 10px;
+  line-height: 1.2; 
+}
+.btn-primary {
+  @extend .btn;
+  color: #fff;
+}
+.box {
+  .btn {
+    padding: 5px;
+  }
+}
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn, .btn-primary {
+  padding: 10px;
+  line-height: 1.2;
+}
+.btn-primary {
+  color: #fff;
+}
+.box .btn, .box .btn-primary {
+  padding: 5px;
+}
+</code></pre>
+						</div>
+					</div>
 
+				</section>
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
+					<h1>Use Placeholders for Better @extends!</h1>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.btn, %btn {
+  padding: 10px;
+  line-height: 1.2; 
+}
+.btn-primary {
+  @extend %btn;
+  color: #fff;
+}
+.box {
+  .btn {
+    padding: 5px;
+  }
+}
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn, .btn-primary {
+  padding: 10px;
+  line-height: 1.2;
+}
 
+.btn-primary {
+  color: #fff;
+}
+
+.box .btn {
+  padding: 5px;
+}
+</code></pre>							
+						</div>
+					</div>
+					
+
+
+
+				</section>
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+					<h1>Button Example</h1>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+%btn {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  display: inline-block;
+  padding: 16px;
+}
+.btn-primary {
+  @extend %btn;
+  background: rgb(35,146,226);
+  color: #fff;
+}
+.btn-secondary {
+  @extend %btn;
+  background: #f7f7f7;
+  color: #444;
+}	
+</code></pre>		
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.btn-primary, .btn-secondary {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 16px;
+}
 
+.btn-primary {
+  background: #2392e2;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #f7f7f7;
+  color: #444;
+}
+</code></pre>
+						</div>
+					</div>
+
+
+
+
+				</section>
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+					<h1>Mixins</h1>
+					<h5 class="upper other">
+						Spend less time writing css.
+					</h5>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+@mixin mixin-name {
+  // code
+}	
+@mixin visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+</code></pre>
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.label {
+  @include visually-hidden
+}
+</code></pre>
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.label {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+</code></pre>
+						</div>
+					</div>
 				</section>
-
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+					<h1>Pass Arguments to Mixins</h1>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  flex-direction: $direction;
+}	
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.row {
+  display: flex;
+  @include flex-direction(column);
+}
+</code></pre>
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.row {
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}	
+</code></pre>
+						</div>
+					</div>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
-
+				
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<h2>Pass Content Blocks to Mixins</h2>
+<pre><code data-trim>
+@mixin breakpoint($break, $type: min-width) {
+  @if $type == min-width {
+    @media (min-width: $break) { @content; }
+  } @else {
+    @media (#{$type}: $break) { @content; }
+  }
+}
+</code></pre>
 				</section>
-
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
+					<h2>Pass Content Blocks to Mixins</h2>
+<pre><code data-trim>
+@mixin breakpoint($break, $type: min-width) {}
+</code></pre>
 				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<h2>Pass Content Blocks to Mixins</h2>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+@if $type == min-width {
+  // Do Something
+} @else {
+  // Do Some Other Thing
+}
+</code></pre>
+						</div>
+					</div>
 				</section>
-
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+					<h2>Pass Content Blocks to Mixins</h2>
+<pre><code data-trim>
+@media (min-width: $break) { 
+  @content; 
+}
+</code></pre>
 				</section>
+				
+				<section>
+					<h2>Pass Content Blocks to Mixins</h2>
+<pre><code data-trim>
+@media (#{$type}: $break) { 
+  @content; 
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Pass Content Blocks to Mixins</h2>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.block {
+  padding: 40px;
+  width: 100%;
+  @include breakpoint(500px) {
+    width: 40%;
+    float: left;
+  }
+}
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.block {
+  padding: 40px;
+  width: 100%;
+}
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+@media (min-width: 500px) {
+  .block {
+    width: 40%;
+    float: left;
+  }
+}
+</code></pre>
+						</div>
+					</div>
 				</section>
+				<section>
+					<h2>Pass Content Blocks to Mixins</h2>
+					<div class="row">
+						<div class="grid">
+<pre><code data-trim>
+.block {
+  width: 40%;
+  float: left;
+  @include breakpoint(500px, max-width) {
+    padding: 40px;
+    width: 100%;
+  }
+}
+</code></pre>							
+						</div>
+						<div class="grid fragment">
+<pre><code data-trim>
+.block {
+  width: 40%;
+  float: left;
+}
+
+@media (max-width: 500px) {
+  .block {
+    padding: 40px;
+    width: 100%;
+  }
+}
+</code></pre>
+						</div>
+					</div>
+				</section>
+				
 
 			</div>
 
@@ -388,8 +897,9 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				history: true,
 				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				width: "90%",
+				margin: 0.05,
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [

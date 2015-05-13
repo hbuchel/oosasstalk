@@ -12,23 +12,23 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+// @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
 $mainColor: #222;
-$headingColor: #222;
+$headingColor: #4F5B5F;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'aktiv-grotesk-std', Helvetica, sans-serif;
+$headingFont: 'aktiv-grotesk-std', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
-$linkColor: #2a76dd;
+$headingTextTransform: none;
+$headingFontWeight: 900;
+$linkColor: #000;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -47,3 +47,45 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+	p {
+		font-size: .7em;
+	}
+	.alt {
+		color: #fff;
+	}
+	.upper {
+		text-transform: uppercase;
+	}
+	.other {
+		color: rgb(114, 131, 134);
+	}
+	.meta {
+		color: #888;
+		font-weight: 400;
+	}
+	.row {
+		display: flex;
+	}
+	.grid {
+		flex: 1;
+		padding: 0 10px;
+	}
+	.grid--2 {
+		flex: 2;
+		padding: 0 10px;
+	}
+	.grid--3 {
+		flex: 3;
+		padding: 0 10px;
+	}
+	.red {
+		color: red;
+	}
+	.vertical {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
