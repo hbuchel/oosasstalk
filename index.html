@@ -80,7 +80,7 @@
 
 				<section>
 					<h6 class="other">The Basics of OOCSS</h6>
-					<div class="row fragment">
+					<div class="row fragment margin-large">
 						<div class="grid vertical">
 							<img src="/images/structure.svg" />
 						</div>
@@ -96,6 +96,11 @@
 							<h3>Separate Container and Content</h3>
 						</div>
 					</div>	
+				</section>
+				
+				<section>
+					<h6>Separating Structure from Skin</h6>
+					<h1>Create Styles that can be Mixed and Matched</h1>
 				</section>
 				
 				<section>
@@ -157,10 +162,7 @@ img {
 						</div>
 					</div>
 				</section>
-				<section>
-					<h6>Separating Structure from Skin</h6>
-					<h1>Create Styles that can be Mixed and Matched</h1>
-				</section>
+				
 				<section>
 					<h6>The Button Example</h6>
 <pre><code data-trim>
@@ -180,6 +182,18 @@ img {
 				</section>
 				<section>
 					<h3>Too Much Heavy Lifting</h3>
+<pre><code data-trim>
+.btn {
+  background: rgb(35,146,226);
+  box-shadow: 0 3px  5px rgba(0,0,0,.1);
+  color: #fff;
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  border: none;
+}
+</code></pre>
+					
 					<p>What If I want to?</p>
 					<ul>
 						<li class="fragment">Float Left?</li>
@@ -189,6 +203,18 @@ img {
 				</section>
 				<section>
 					<h3>OOCSS-Ified Button</h3>
+<pre><code data-trim>
+.btn {
+  background: rgb(35,146,226);
+  box-shadow: 0 3px  5px rgba(0,0,0,.1);
+  color: #fff;
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  border: none;
+}
+</code></pre>
+					
 					<div class="row">
 						<div class="grid">
 							<h4>A 'Structure' Class</h4>
@@ -879,7 +905,9 @@ $font-body: 'Futura PT', 'Arial', sans-serif;
 						</div>
 					</div>
 				</section>
-				
+				<section>
+					<h1>Thanks!</h1>
+				</section>
 
 			</div>
 

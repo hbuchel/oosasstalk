@@ -290,3 +290,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+.reveal .margin-large {
+  margin: 50px 0; }
